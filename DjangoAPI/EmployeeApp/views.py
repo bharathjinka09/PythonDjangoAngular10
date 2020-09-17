@@ -36,7 +36,7 @@ def departmentApi(request,id=0):
     elif request.method=='DELETE':
         department=Departments.objects.get(DepartmentId=id)
         department.delete()
-        return JsonResponse("Deleted Succeffully!!", safe=False)
+        return JsonResponse("Deleted Successfully!!", safe=False)
 
 @csrf_exempt
 def employeeApi(request,id=0):

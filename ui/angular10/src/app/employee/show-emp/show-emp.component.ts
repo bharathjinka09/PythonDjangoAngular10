@@ -61,6 +61,7 @@ export class ShowEmpComponent implements OnInit {
   refreshEmpList() {
     this.service.getEmpList().subscribe((data) => {
       this.EmployeeList = data;
+      this.EmployeeListWithoutFilter = data;
     });
   }
 
